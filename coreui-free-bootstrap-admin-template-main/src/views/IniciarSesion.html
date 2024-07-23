@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v5.0.0
+* @link https://coreui.io/product/free-bootstrap-admin-template/
+* Copyright (c) 2024 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
+-->
+
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>Iniciar sesion</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  
+  <meta name="theme-color" content="#ffffff">
+  <!-- Vendors styles-->
+  <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+  <link rel="stylesheet" href="css/vendors/simplebar.css">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- We use those styles to show code examples, you should remove them in your application.-->
+  <link href="css/examples.css" rel="stylesheet">
+  <!-- We use those styles to style Carbon ads and CoreUI PRO banner, you should remove them in your application.-->
+  <script src="js/config.js"></script>
+  <script src="js/color-modes.js"></script>
+</head>
+
+<body>
+  <div class="bg-body-tertiary min-vh-100 d-flex flex-row align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="card-group d-block d-md-flex row">
+            <div class="card col-md-7 p-4 mb-0">
+              <div class="card-body my-4">
+                <h1>Iniciar Sesion</h1>
+                <p class="text-body-secondary">Ingresa a tu cuenta</p>
+                <div class="input-group my-4"><span class="input-group-text">
+                    <svg class="icon">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                    </svg></span>
+                  <input class="form-control" type="text" placeholder="Usuario">
+                </div>
+                <div class="input-group my-4"><span class="input-group-text">
+                    <svg class="icon">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
+                    </svg></span>
+                  <input class="form-control" type="password" placeholder="Contraseña">
+                </div>
+                <div class="row d-lg-flex text-center">
+                  <div class="col-12 align-items-center mb-2">
+                    <button class="IniciarSesion px-4" type="button"><a href="resumen.html" class="text-decoration-none text-white">Iniciar sesion</a></button>
+                  </div>
+                  <div class="col-12 align-items-center">
+                    <button class="btn btn-link px-0" type="button">Olvidaste tu contraseña?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CoreUI and necessary plugins-->
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+  <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+  <script>
+    const header = document.querySelector('header.header');
+
+    document.addEventListener('scroll', () => {
+      if (header) {
+        header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+      }
+    });
+
+  </script>
+  <script>
+  </script>
+</body>
+
+<style>
+  .IniciarSesion {
+  font-size: 17px;
+  background: rgba(49, 49, 79, 0.444);
+  border: none;
+  padding: 1em 1.5em;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.IniciarSesion::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #9b06ff;
+  transition: 0.5s ease;
+}
+
+.IniciarSesion:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.IniciarSesion:hover::before {
+  width: 100%;
+}
+
+.IniciarSesion::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #9b06ff;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.IniciarSesion:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+</style>
+</html>
