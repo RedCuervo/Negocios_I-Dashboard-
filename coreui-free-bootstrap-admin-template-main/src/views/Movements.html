@@ -10,315 +10,293 @@
 <html lang="en">
 
 <head>
-    <base href="./">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Platinum Suplements dashboard">
-    <meta name="author" content="Unknown">
-    <meta name="keyword" content="Bootstrap,Admin,Dashboard">
-    <title>Platinum Dashboard</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="Platinum Suplements dashboard">
+  <meta name="author" content="Unknown">
+  <meta name="keyword" content="Bootstrap,Admin,Dashboard">
+  <title>Platinum Dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Vendors styles-->
-    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
-    <link rel="stylesheet" href="css/vendors/simplebar.css">
-    <!-- Main styles for this application-->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link href="css/examples.css" rel="stylesheet">
-    <!-- We use those styles to style Carbon ads and CoreUI PRO banner, you should remove them in your application.-->
-    <link href="css/ads.css" rel="stylesheet">
-    <script src="js/config.js"></script>
-    <script src="js/color-modes.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Vendors styles-->
+  <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+  <link rel="stylesheet" href="css/vendors/simplebar.css">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- We use those styles to show code examples, you should remove them in your application.-->
+  <link href="css/examples.css" rel="stylesheet">
+  <!-- We use those styles to style Carbon ads and CoreUI PRO banner, you should remove them in your application.-->
+  <link href="css/ads.css" rel="stylesheet">
+  <script src="js/config.js"></script>
+  <script src="js/color-modes.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 </head>
 
 <body>
-    <!--primera parte-->
-    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar"
-    style="background-color: var(--cui-dark);">
-      <div class="sidebar-header border-bottom">
-        Aqui va la marca xd
-        <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
+  <!--primera parte-->
+  <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar" style="background-color: var(--cui-dark);">
+    <div class="sidebar-header border-bottom">
+      Aqui va la marca xd
+      <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark"
+        aria-label="Close"
+        onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
+    </div>
+    <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+      <li class="nav-item"><a class="nav-link" href="resumen.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+          </svg> Dashboard</a></li>
+
+      <li class="nav-title">Administrar</li>
+      <li class="nav-item"><a class="nav-link" href="orders.html" target="_top">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
+          </svg> Ordenes de compra</a></li>
+      <li class="nav-item"><a class="nav-link" href="CRUD.html" target="_top">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-clipboard"></use>
+          </svg> Gestión de Inventario</a></li>
+      <li class="nav-item"><a class="nav-link" href="Stats.html" target="_top">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
+          </svg> Estadísticas</a></li>
+      <li class="nav-item"><a class="nav-link" href="Movements.html" target="_top">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-history"></use>
+          </svg> Movimientos</a></li>
+
+      <li class="nav-item"><a class="nav-link" href="IniciarSesion.html" target="_top">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+          </svg> Iniciar sesion</a></li>
+
+    </ul>
+  </div>
+
+
+  <!---segunda parte--->
+  <div class="wrapper d-flex flex-column min-vh-100">
+    <header class="header header-sticky p-0 mb-4">
+      <div class="container-fluid border-bottom px-4">
+        <button class="header-toggler" type="button"
+          onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()"
+          style="margin-inline-start: -14px;">
+          <svg class="icon icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <ul class="header-nav d-none d-lg-flex">
+          <li class="nav-item"><a class="nav-link" href="resumen.html">Dashboard</a></li>
+        </ul>
+        <ul class="header-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="icon icon-lg">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+              </svg></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="icon icon-lg">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
+              </svg></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="icon icon-lg">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+              </svg></a></li>
+        </ul>
+        <ul class="header-nav">
+          <li class="nav-item py-1">
+            <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
+          <li class="nav-item py-1">
+            <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#"
+              role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com">
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end pt-0">
+              <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">Cuenta
+              </div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                </svg> Notificaciones<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item"
+                href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                </svg> Mensajes<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item"
+                href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                </svg> Tareas<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                </svg> Comentarios<span class="badge badge-sm bg-warning ms-2">42</span></a>
+              <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold my-2">
+                <div class="fw-semibold">Ajustes</div>
+              </div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                </svg> Perfil</a><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                </svg> Configuracion</a><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
+                </svg> Pagos<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item"
+                href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
+                </svg> Proyectos<span class="badge badge-sm bg-primary ms-2">42</span></a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="IniciarSesion.html">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                </svg> Cerrar sesion</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
-        <li class="nav-item"><a class="nav-link" href="index.html">
-            <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
-            </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
-        
-            <li class="nav-title">Admin Panel</li> 
-            <li class="nav-item"><a class="nav-link" href="orders.html" target="_top">
-              <svg class="nav-icon">
-                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-basket"></use>
-              </svg> Ordenes de compra</a></li>
-              <li class="nav-item"><a class="nav-link" href="CRUD.html" target="_top">
-                <svg class="nav-icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-clipboard"></use>
-                </svg> Gestión de Inventario</a></li>
-                <li class="nav-item"><a class="nav-link" href="Stats.html" target="_top">
-                  <svg class="nav-icon">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
-                  </svg> Estadísticas</a></li>
-                  <li class="nav-item"><a class="nav-link" href="Movements.html" target="_top">
-                    <svg class="nav-icon">
-                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-history"></use>
-                    </svg> Movimientos</a></li>
-            
-        <li class="nav-title">Extras</li>
-        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
-            <svg class="nav-icon">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
-            </svg> Pages</a>
-          <ul class="nav-group-items compact">
-            <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
-                <svg class="nav-icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
-                </svg> Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="register.html" target="_top">
-                <svg class="nav-icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
-                </svg> Register</a></li>
-            <li class="nav-item"><a class="nav-link" href="404.html" target="_top">
-                <svg class="nav-icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
-                </svg> Error 404</a></li>
-            <li class="nav-item"><a class="nav-link" href="500.html" target="_top">
-                <svg class="nav-icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
-                </svg> Error 500</a></li>
-          </ul>
-        </li>
-        
-      </ul>
+
+    </header>
+
+    <div class="body flex-grow-1">
+      <div class="container-lg px-4">
+        <div class="row mb-4">
+          <h2 class="mb-4">Movimientos del Panel de Administración</h2>
+          <table class="table table-striped" id="movementsTable">
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Campo</th>
+                <th>Tipo de Movimiento</th>
+                <th>Fecha y Hora</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>admin</td>
+                <td>Campo1</td>
+                <td>Alta</td>
+                <td>2023-07-14 12:34:56</td>
+              </tr>
+              <tr>
+                <td>user1</td>
+                <td>Campo2</td>
+                <td>Baja</td>
+                <td>2023-07-14 14:22:10</td>
+              </tr>
+              <tr>
+                <td>user2</td>
+                <td>Campo3</td>
+                <td>Cambio</td>
+                <td>2023-07-15 09:11:33</td>
+              </tr>
+              <tr>
+                <td>admin</td>
+                <td>Campo4</td>
+                <td>Alta</td>
+                <td>2023-07-16 16:45:27</td>
+              </tr>
+              <tr>
+                <td>user3</td>
+                <td>Campo5</td>
+                <td>Baja</td>
+                <td>2023-07-17 08:21:19</td>
+              </tr>
+              <tr>
+                <td>user4</td>
+                <td>Campo6</td>
+                <td>Cambio</td>
+                <td>2023-07-18 10:22:50</td>
+              </tr>
+              <tr>
+                <td>admin</td>
+                <td>Campo7</td>
+                <td>Alta</td>
+                <td>2023-07-19 11:30:45</td>
+              </tr>
+              <tr>
+                <td>user5</td>
+                <td>Campo8</td>
+                <td>Baja</td>
+                <td>2023-07-20 14:22:50</td>
+              </tr>
+              <tr>
+                <td>user6</td>
+                <td>Campo9</td>
+                <td>Cambio</td>
+                <td>2023-07-21 15:35:40</td>
+              </tr>
+              <tr>
+                <td>admin</td>
+                <td>Campo10</td>
+                <td>Alta</td>
+                <td>2023-07-22 17:22:20</td>
+              </tr>
+              <!-- Agrega más filas según sea necesario -->
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script>
+      const header = document.querySelector('header.header');
 
-    <!---segunda parte--->
-    <div class="wrapper d-flex flex-column min-vh-100">
-      <header class="header header-sticky p-0 mb-4">
-        <div class="container-fluid border-bottom px-4">
-          <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;">
-            <svg class="icon icon-lg">
-              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
-            </svg>
-          </button>
-          <ul class="header-nav d-none d-lg-flex">
-            <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
-          </ul>
-          <ul class="header-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">
-                <svg class="icon icon-lg">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
-                </svg></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">
-                <svg class="icon icon-lg">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
-                </svg></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">
-                <svg class="icon icon-lg">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                </svg></a></li>
-          </ul>
-          <ul class="header-nav">
-            <li class="nav-item py-1">
-              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
-            </li>
-            <li class="nav-item py-1">
-              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
-              <div class="dropdown-menu dropdown-menu-end pt-0">
-                <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">Account</div><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
-                  </svg> Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
-                  </svg> Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
-                  </svg> Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
-                  </svg> Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
-                <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold my-2">
-                  <div class="fw-semibold">Settings</div>
-                </div><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-                  </svg> Profile</a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
-                  </svg> Settings</a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
-                  </svg> Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
-                  </svg> Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
-                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
-                  </svg> Lock Account</a><a class="dropdown-item" href="#">
-                  <svg class="icon me-2">
-                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
-                  </svg> Logout</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="container-fluid px-4">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb my-0">
-              <li class="breadcrumb-item active"><span>Home</span>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </header>
-        <div class="body flex-grow-1">
-            <div class="container-lg px-4">
-                <div class="row mb-4">
-                    <h2 class="mb-4">Movimientos del Panel de Administración</h2>
-                    <table class="table table-striped" id="movementsTable">
-                        <thead>
-                            <tr>
-                                <th>Usuario</th>
-                                <th>Campo</th>
-                                <th>Tipo de Movimiento</th>
-                                <th>Fecha y Hora</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>admin</td>
-                                <td>Campo1</td>
-                                <td>Alta</td>
-                                <td>2023-07-14 12:34:56</td>
-                            </tr>
-                            <tr>
-                                <td>user1</td>
-                                <td>Campo2</td>
-                                <td>Baja</td>
-                                <td>2023-07-14 14:22:10</td>
-                            </tr>
-                            <tr>
-                                <td>user2</td>
-                                <td>Campo3</td>
-                                <td>Cambio</td>
-                                <td>2023-07-15 09:11:33</td>
-                            </tr>
-                            <tr>
-                                <td>admin</td>
-                                <td>Campo4</td>
-                                <td>Alta</td>
-                                <td>2023-07-16 16:45:27</td>
-                            </tr>
-                            <tr>
-                                <td>user3</td>
-                                <td>Campo5</td>
-                                <td>Baja</td>
-                                <td>2023-07-17 08:21:19</td>
-                            </tr>
-                            <tr>
-                                <td>user4</td>
-                                <td>Campo6</td>
-                                <td>Cambio</td>
-                                <td>2023-07-18 10:22:50</td>
-                            </tr>
-                            <tr>
-                                <td>admin</td>
-                                <td>Campo7</td>
-                                <td>Alta</td>
-                                <td>2023-07-19 11:30:45</td>
-                            </tr>
-                            <tr>
-                                <td>user5</td>
-                                <td>Campo8</td>
-                                <td>Baja</td>
-                                <td>2023-07-20 14:22:50</td>
-                            </tr>
-                            <tr>
-                                <td>user6</td>
-                                <td>Campo9</td>
-                                <td>Cambio</td>
-                                <td>2023-07-21 15:35:40</td>
-                            </tr>
-                            <tr>
-                                <td>admin</td>
-                                <td>Campo10</td>
-                                <td>Alta</td>
-                                <td>2023-07-22 17:22:20</td>
-                            </tr>
-                            <!-- Agrega más filas según sea necesario -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        
-        <!-- CoreUI and necessary plugins-->
-        <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
-        <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
-        <script>
-            const header = document.querySelector('header.header');
+      document.addEventListener('scroll', () => {
+        if (header) {
+          header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+        }
+      });
 
-            document.addEventListener('scroll', () => {
-                if (header) {
-                    header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
-                }
-            });
-
-        </script>
-         <script>
-        $(document).ready(function() {
-            var table = $('#movementsTable').DataTable({
-                "paging": true,
-                "searching": true,
-                "ordering": true,
-                "pageLength": 5,
-                "language": {
-                    "sProcessing":     "Procesando...",
-                    "sLengthMenu":     "Mostrar _MENU_ registros",
-                    "sZeroRecords":    "No se encontraron resultados",
-                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
-                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix":    "",
-                    "sSearch":         "Buscar:",
-                    "sUrl":            "",
-                    "sInfoThousands":  ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst":    "Primero",
-                        "sLast":     "Último",
-                        "sNext":     "Siguiente",
-                        "sPrevious": "Anterior"
-                    },
-                    "oAria": {
-                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                }
-            });
-
-            $('#search').on('keyup', function() {
-                table.search(this.value).draw();
-            });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var table = $('#movementsTable').DataTable({
+          "paging": true,
+          "searching": true,
+          "ordering": true,
+          "pageLength": 5,
+          "language": {
+            "sProcessing": "Procesando...",
+            "sLengthMenu": "Mostrar _MENU_ registros",
+            "sZeroRecords": "No se encontraron resultados",
+            "sEmptyTable": "Ningún dato disponible en esta tabla",
+            "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+            "sInfoPostFix": "",
+            "sSearch": "Buscar:",
+            "sUrl": "",
+            "sInfoThousands": ",",
+            "sLoadingRecords": "Cargando...",
+            "oPaginate": {
+              "sFirst": "Primero",
+              "sLast": "Último",
+              "sNext": "Siguiente",
+              "sPrevious": "Anterior"
+            },
+            "oAria": {
+              "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+              "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+            }
+          }
         });
+
+        $('#search').on('keyup', function () {
+          table.search(this.value).draw();
+        });
+      });
     </script>
 </body>
 
